@@ -13,16 +13,16 @@ sudo apt-key adv --fetch-keys  http://developer.download.nvidia.com/compute/cuda
 sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda.list'
 sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda_learn.list'
 
-#Install CUDA 10.1 packages
+#Install CUDA 10.2 packages
 sudo apt update
-sudo apt install cuda-10-1 -y 
+sudo apt install cuda-10-2 -y 
 sudo apt install libcudnn7 -y
 
 #As the last step one need to specify PATH to CUDA in ‘.profile’ file. Open the file by running
 #And add the following lines at the end of the file:
-#sudo vi ~/.profile
-#if [ -d "/usr/local/cuda-10.1/bin/" ]; then
-#    export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
-#    export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-#fi
+sudo vi ~/.profile
+if [ -d "/usr/local/cuda-10.2/bin/" ]; then
+    export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+fi
 
