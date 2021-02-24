@@ -21,8 +21,8 @@ sudo apt install libcudnn7 -y
 #As the last step one need to specify PATH to CUDA in ‘.profile’ file. Open the file by running
 #And add the following lines at the end of the file:
 sudo vi ~/.profile
-if [ -d "/usr/local/cuda-10.2/bin/" ]; then
-    export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
-    export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-fi
+#if [ -d "/usr/local/cuda-10.2/bin/" ]; then
+#    export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+#    export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+#fi
 
