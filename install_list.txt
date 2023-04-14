@@ -1,0 +1,20 @@
+# ENV
+CUDA
+Opencv 4
+Docker
+
+
+
+# Tool
+VLC
+Teamviewer
+Anydesk
+Firefox
+Chrome
+Tilinx
+Sublime Text
+zsh
+
+
+# Entertain 
+Steam
